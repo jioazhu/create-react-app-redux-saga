@@ -8,6 +8,7 @@ import { Provider } from 'react-redux';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import createSagaMiddleware from 'redux-saga';
 import rootReducer from './reducers';
+import rootSage from './sagas';
 
 const sageMiddleware = createSagaMiddleware();
 
@@ -17,6 +18,8 @@ const store = createStore(
     applyMiddleware(sageMiddleware)
   )
 )
+
+sageMiddleware.run(rootSage);
 
 
 
