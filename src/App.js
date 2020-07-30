@@ -16,7 +16,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          git flow1 (release bug修复)
+          git flow1 (release bug修复) (hotfix bug修复)
         </a>
       </header>
     </div>
